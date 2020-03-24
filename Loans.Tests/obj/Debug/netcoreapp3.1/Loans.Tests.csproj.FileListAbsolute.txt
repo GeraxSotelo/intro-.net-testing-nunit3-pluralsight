@@ -1,0 +1,4 @@
+C:\Users\Sotelo\Documents\Pluralsight\Introduction to .NET Testing with NUnit 3\nunit-3-dotnet-testing-introduction\02\demos\before\01TestProject\Loans.Tests\bin\Debug\netcoreapp3.1\Loans.dll
+C:\Users\Sotelo\Documents\Pluralsight\Introduction to .NET Testing with NUnit 3\nunit-3-dotnet-testing-introduction\02\demos\before\01TestProject\Loans.Tests\obj\Debug\netcoreapp3.1\Loans.Tests.csprojAssemblyReference.cache
+C:\Users\Sotelo\Documents\Pluralsight\Introduction to .NET Testing with NUnit 3\nunit-3-dotnet-testing-introduction\02\demos\before\01TestProject\Loans.Tests\obj\Debug\netcoreapp3.1\Loans.Tests.AssemblyInfoInputs.cache
+C:\Users\Sotelo\Documents\Pluralsight\Introduction to .NET Testing with NUnit 3\nunit-3-dotnet-testing-introduction\02\demos\before\01TestProject\Loans.Tests\obj\Debug\netcoreapp3.1\Loans.Tests.AssemblyInfo.cs
