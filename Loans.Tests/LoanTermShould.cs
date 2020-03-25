@@ -12,7 +12,7 @@ namespace Loans.Tests
         {
             var sut = new LoanTerm(1);
 
-            Assert.That(sut.ToMonths(), Is.EqualTo(12));
+            Assert.That(sut.ToMonths(), Is.EqualTo(12), "Months should be 12 times number of years");
         }
 
         [Test]
@@ -82,6 +82,19 @@ namespace Loans.Tests
             Assert.That(z, Is.SameAs(x));
             // This one will pass
             Assert.That(z, Is.Not.SameAs(x));
+        }
+
+        [Test]
+        public void Double()
+        {
+            double a = 1.0 / 3.0;
+
+            // This one will fail when dealing with floating point values
+            Assert.That(a, Is.EqualTo(0.33));
+
+            // These will pass
+            Assert.That(a, Is.EqualTo(0.33).Within(0.004));
+            Assert.That(a, Is.EqualTo(0.33).Within(10).Percent);
         }
     }
 }
