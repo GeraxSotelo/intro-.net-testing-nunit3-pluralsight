@@ -1,5 +1,6 @@
 ﻿using Loans.Domain.Applications;
 using NUnit.Framework;
+using System.Collections.Generic;
 
 namespace Loans.Tests
 {
@@ -52,6 +53,35 @@ namespace Loans.Tests
             var b = new LoanTerm(2);
 
             Assert.That(a, Is.Not.EqualTo(b));
+        }
+
+        [Test]
+        public void ReferenceEqualityExample()
+        {
+            var a = new LoanTerm(1);
+            var b = a;
+            var c = new LoanTerm(1);
+            // The 'SameAs' method only compares references, not values.
+            // Assert that the variables 'a' & 'b' or 'a' & 'c' point to the same object in memory.
+
+            // This one will pass
+            Assert.That(a, Is.SameAs(b));
+            // This one will fail
+            Assert.That(a, Is.SameAs(c));
+            // This one will pass
+            Assert.That(a, Is.Not.SameAs(c));
+
+            // 'List' of '<type>' is a reference type
+            var x = new List<string> { "a", "b" };
+            var y = x;
+            var z = new List<string> { "a", "b" };
+
+            // This one will pass
+            Assert.That(y, Is.SameAs(x));
+            // This one will fail
+            Assert.That(z, Is.SameAs(x));
+            // This one will pass
+            Assert.That(z, Is.Not.SameAs(x));
         }
     }
 }
