@@ -2,7 +2,6 @@
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Loans.Tests
 {
@@ -63,6 +62,24 @@ namespace Loans.Tests
 
             // more type-safe way to specify conditions
             Assert.That(comparisons, Has.Exactly(1).Matches<MonthlyRepaymentComparison>(item => item.ProductName == "a" && item.InterestRate == 1 && item.MonthlyRepayment > 0));
+        }
+
+        [Test]
+        public void NotAllowZeroYears()
+        {
+            // first param is an action that gets executed and causes and exception to be thrown
+            // second param allows to specify that first param action throws an exception
+            Assert.That(() => new LoanTerm(0), Throws.TypeOf<ArgumentOutOfRangeException>());
+
+            Assert.That(() => new LoanTerm(0), Throws.TypeOf<ArgumentOutOfRangeException>().With.Property("Message").EqualTo("Please specify a value greater than 0. (Parameter 'years')"));
+
+            Assert.That(() => new LoanTerm(0), Throws.TypeOf<ArgumentOutOfRangeException>().With.Message.EqualTo("Please specify a value greater than 0. (Parameter 'years')"));
+
+            // correct exception and param name but don't care about the message
+            Assert.That(() => new LoanTerm(0), Throws.TypeOf<ArgumentOutOfRangeException>().With.Property("ParamName").EqualTo("years"));
+
+            Assert.That(() => new LoanTerm(0), Throws.TypeOf<ArgumentOutOfRangeException>().With.Matches<ArgumentOutOfRangeException>(ex => ex.ParamName == "years"));
+
         }
     }
 }
