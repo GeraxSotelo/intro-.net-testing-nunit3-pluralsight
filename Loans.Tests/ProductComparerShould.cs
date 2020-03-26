@@ -13,9 +13,16 @@ namespace Loans.Tests
         [SetUp]
         public void Setup()
         {
-            // this method will get called before each test executes
+            // This method will get called before each test executes
             products = new List<LoanProduct> { new LoanProduct(1, "a", 1), new LoanProduct(2, "b", 2), new LoanProduct(3, "c", 3) };
             sut = new ProductComparer(new LoanAmount("USD", 200_000m), products);
+        }
+
+        [TearDown]
+        public void TearDown()
+        {
+            // Runs after each test executes
+            // if sut implented IDiposable, we can call sut.Dispose();
         }
 
         [Test]
