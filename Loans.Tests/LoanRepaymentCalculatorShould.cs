@@ -10,6 +10,8 @@ namespace Loans.Tests
     {
         [Test]
         [TestCase(200_000, 6.5, 30, 1264.14)]
+        [TestCase(200_000, 10, 30, 1755.14)]
+        [TestCase(500_000, 10, 30, 4387.86)]
         public void CalculateCorrectMonthlyRepayment(decimal principal, decimal interestRate, int termInYears, decimal expectedMonthlyPayment)
         {
             var sut = new LoanRepaymentCalculator();
