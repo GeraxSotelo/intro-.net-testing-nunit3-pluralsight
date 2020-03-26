@@ -9,13 +9,14 @@ namespace Loans.Tests
     public class LoanRepaymentCalculatorShould
     {
         [Test]
-        public void CalculateCorrectMonthlyRepayment()
+        [TestCase(200_000, 6.5, 30, 1264.14)]
+        public void CalculateCorrectMonthlyRepayment(decimal principal, decimal interestRate, int termInYears, decimal expectedMonthlyPayment)
         {
             var sut = new LoanRepaymentCalculator();
 
-            var monthlyPayment = sut.CalculateMonthlyRepayment(new LoanAmount("USD", 200_000), 6.5m, new LoanTerm(30));
+            var monthlyPayment = sut.CalculateMonthlyRepayment(new LoanAmount("USD", principal), interestRate, new LoanTerm(termInYears));
 
-            Assert.That(monthlyPayment, Is.EqualTo(1264.14));
+            Assert.That(monthlyPayment, Is.EqualTo(expectedMonthlyPayment));
         }
     }
 }
