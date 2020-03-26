@@ -1229,6 +1229,10 @@
       "Loans/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Microsoft.NET.Test.Sdk": "16.5.0",
+          "NUnit": "3.12.0"
+        },
         "compile": {
           "bin/placeholder/Loans.dll": {}
         },
@@ -2080,11 +2084,12 @@
       ]
     },
     "System.Collections.Specialized/4.3.0": {
-      "sha512": "NoPBj0ykejqAWW4p4gGtrrL+3c84ZLSvGnHgq422ew1Rj4WKj1FA8/BCybqC111EtgcqUl6ZJNFYYS22HLgbjA==",
+      "sha512": "Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
       "type": "package",
       "path": "system.collections.specialized/4.3.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -4588,23 +4593,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sotelo\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\gerax.sotelo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\nunit-3-dotnet-testing-introduction\\02\\demos\\before\\01TestProject\\Loans.Tests\\Loans.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\gerax.sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\Loans.Tests\\Loans.Tests.csproj",
       "projectName": "Loans.Tests",
-      "projectPath": "C:\\Users\\Sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\nunit-3-dotnet-testing-introduction\\02\\demos\\before\\01TestProject\\Loans.Tests\\Loans.Tests.csproj",
-      "packagesPath": "C:\\Users\\Sotelo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\nunit-3-dotnet-testing-introduction\\02\\demos\\before\\01TestProject\\Loans.Tests\\obj\\",
+      "projectPath": "C:\\Users\\gerax.sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\Loans.Tests\\Loans.Tests.csproj",
+      "packagesPath": "C:\\Users\\gerax.sotelo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\gerax.sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\Loans.Tests\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Sotelo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\gerax.sotelo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4617,8 +4618,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\nunit-3-dotnet-testing-introduction\\02\\demos\\before\\01TestProject\\Loans\\Loans.csproj": {
-              "projectPath": "C:\\Users\\Sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\nunit-3-dotnet-testing-introduction\\02\\demos\\before\\01TestProject\\Loans\\Loans.csproj"
+            "C:\\Users\\gerax.sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\Loans\\Loans.csproj": {
+              "projectPath": "C:\\Users\\gerax.sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\Loans\\Loans.csproj"
             }
           }
         }

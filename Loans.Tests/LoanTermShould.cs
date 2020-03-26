@@ -85,6 +85,7 @@ namespace Loans.Tests
         }
 
         [Test]
+        [Ignore("Testing ignore attribute from NUnit.Framework")]
         public void Double()
         {
             double a = 1.0 / 3.0;
