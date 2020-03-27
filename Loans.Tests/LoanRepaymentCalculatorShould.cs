@@ -35,7 +35,7 @@ namespace Loans.Tests
         }
 
         [Test]
-        // param1: type that contains the test data. param2: as a string, the property name that will return the test data
+        // param1: type that contains the test data. param2: as a string, property name that will return the test data
         [TestCaseSource(typeof(MonthlyRepaymentTestData), "TestCases")]
         public void CalculateCorrectMonthlyRepayment_Centralized(decimal principal, decimal interestRate, int termInYears, decimal expectedMonthlyPayment)
         {
@@ -47,7 +47,7 @@ namespace Loans.Tests
         }
 
         [Test]
-        // param1: type that contains the test data. param2: as a string, the property name that will return the test data
+        // param1: type that contains the test data. param2: as a string, property name that will return the test data
         [TestCaseSource(typeof(MonthlyRepaymentTestDataWithReturn), "TestCases")]
         public decimal CalculateCorrectMonthlyRepayment_CentralizedWithReturn(decimal principal, decimal interestRate, int termInYears)
         {
@@ -56,6 +56,17 @@ namespace Loans.Tests
             return sut.CalculateMonthlyRepayment(new LoanAmount("USD", principal), interestRate, new LoanTerm(termInYears));
         }
 
+        [Test]
+        //Specify a csv file name. Add an additional parameter to TestCaseSource attribute by creating array of objects that map to each of the parameters in the test method.
+        // param1: type that contains the test data. param2: as a string, property name that will return the test data. param3: array of objects
+        [TestCaseSource(typeof(MonthlyRepaymentCsvData), "GetTestCases", new object[] { "Data.csv" })]
+        public void CalculateCorrectMonthlyRepayment_Csv(decimal principal, decimal interestRate, int termInYears, decimal expectedMonthlyPayment)
+        {
+            var sut = new LoanRepaymentCalculator();
 
+            var monthlyPayment = sut.CalculateMonthlyRepayment(new LoanAmount("USD", principal), interestRate, new LoanTerm(termInYears));
+
+            Assert.That(monthlyPayment, Is.EqualTo(expectedMonthlyPayment));
+        }
     }
 }
