@@ -68,5 +68,18 @@ namespace Loans.Tests
 
             Assert.That(monthlyPayment, Is.EqualTo(expectedMonthlyPayment));
         }
+
+        [Test]
+        // Not using expected results or an assert because by default, when using 'Values' attribute, NUnit will create combinations of all the values
+        // With the combinatorial approach, this will create 27 test cases
+        public void CalculateCorrectMonthlyRepayment_Combinatorial(
+            [Values(100_000, 200_000, 500_000)]decimal principal, [Values(6.5, 10, 20)]decimal interestRate, [Values(10, 20, 30)]int termInYears)
+        {
+            var sut = new LoanRepaymentCalculator();
+
+            var monthlyPayment = sut.CalculateMonthlyRepayment(new LoanAmount("USD", principal), interestRate, new LoanTerm(termInYears));
+        }
+
+        
     }
 }
