@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gerax.sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\Loans\\Loans.csproj": {}
+    "C:\\Users\\Sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\nunit-3-dotnet-testing-introduction\\02\\demos\\before\\01TestProject\\Loans\\Loans.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gerax.sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\Loans\\Loans.csproj": {
+    "C:\\Users\\Sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\nunit-3-dotnet-testing-introduction\\02\\demos\\before\\01TestProject\\Loans\\Loans.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerax.sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\Loans\\Loans.csproj",
+        "projectUniqueName": "C:\\Users\\Sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\nunit-3-dotnet-testing-introduction\\02\\demos\\before\\01TestProject\\Loans\\Loans.csproj",
         "projectName": "Loans",
-        "projectPath": "C:\\Users\\gerax.sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\Loans\\Loans.csproj",
-        "packagesPath": "C:\\Users\\gerax.sotelo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerax.sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\Loans\\obj\\",
+        "projectPath": "C:\\Users\\Sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\nunit-3-dotnet-testing-introduction\\02\\demos\\before\\01TestProject\\Loans\\Loans.csproj",
+        "packagesPath": "C:\\Users\\Sotelo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\nunit-3-dotnet-testing-introduction\\02\\demos\\before\\01TestProject\\Loans\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\gerax.sotelo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Sotelo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

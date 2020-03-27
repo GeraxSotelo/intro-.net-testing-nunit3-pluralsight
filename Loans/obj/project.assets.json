@@ -2562,12 +2562,11 @@
       ]
     },
     "System.Collections.Specialized/4.3.0": {
-      "sha512": "Epx8PoVZR0iuOnJJDzp7pWvdfMMOAvpUo95pC4ScH2mJuXkKA2Y4aR3cG9qt2klHgSons1WFh4kcGW7cSXvrxg==",
+      "sha512": "NoPBj0ykejqAWW4p4gGtrrL+3c84ZLSvGnHgq422ew1Rj4WKj1FA8/BCybqC111EtgcqUl6ZJNFYYS22HLgbjA==",
       "type": "package",
       "path": "system.collections.specialized/4.3.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -5107,19 +5106,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gerax.sotelo\\.nuget\\packages\\": {}
+    "C:\\Users\\Sotelo\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gerax.sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\Loans\\Loans.csproj",
+      "projectUniqueName": "C:\\Users\\Sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\nunit-3-dotnet-testing-introduction\\02\\demos\\before\\01TestProject\\Loans\\Loans.csproj",
       "projectName": "Loans",
-      "projectPath": "C:\\Users\\gerax.sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\Loans\\Loans.csproj",
-      "packagesPath": "C:\\Users\\gerax.sotelo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gerax.sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\Loans\\obj\\",
+      "projectPath": "C:\\Users\\Sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\nunit-3-dotnet-testing-introduction\\02\\demos\\before\\01TestProject\\Loans\\Loans.csproj",
+      "packagesPath": "C:\\Users\\Sotelo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sotelo\\Documents\\Pluralsight\\Introduction to .NET Testing with NUnit 3\\nunit-3-dotnet-testing-introduction\\02\\demos\\before\\01TestProject\\Loans\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\gerax.sotelo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sotelo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
