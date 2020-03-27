@@ -1,8 +1,9 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\gerax.sotelo\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\gerax.sotelo\\.nuget\\packages"
+      "C:\\Users\\Sotelo\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Sotelo\\.nuget\\packages",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ]
   }
 }
