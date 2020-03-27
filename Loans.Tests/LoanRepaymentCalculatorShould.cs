@@ -70,7 +70,7 @@ namespace Loans.Tests
         }
 
         [Test]
-        // Not using expected results or an assert because by default, when using 'Values' attribute, NUnit will create combinations of all the values
+        // Not using expected results or an assert because by default, when using NUnit's 'Values' attribute, NUnit will create combinations of all the values
         // With the combinatorial approach, this will create 27 test cases
         public void CalculateCorrectMonthlyRepayment_Combinatorial(
             [Values(100_000, 200_000, 500_000)]decimal principal, [Values(6.5, 10, 20)]decimal interestRate, [Values(10, 20, 30)]int termInYears)
@@ -95,6 +95,18 @@ namespace Loans.Tests
             var monthlyPayment = sut.CalculateMonthlyRepayment(new LoanAmount("USD", principal), interestRate, new LoanTerm(termInYears));
 
             Assert.That(monthlyPayment, Is.EqualTo(expectedMonthlyPayment));
+        }
+
+        [Test]
+        // NUnit's 'Range' attribute to generate a range of values. Params: start, end, increments
+        public void CalculateCorrectMonthlyRepayment_Range(
+            [Range(50_000, 1_000_000, 50_000)]decimal principal,
+            [Range(0.5, 20.00, 0.5)]decimal interestRate,
+            [Values(10, 20, 30)]int termInYears)
+        {
+            var sut = new LoanRepaymentCalculator();
+
+            sut.CalculateMonthlyRepayment(new LoanAmount("USD", principal), interestRate, new LoanTerm(termInYears));
         }
     }
 }
