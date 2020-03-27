@@ -56,6 +56,6 @@ namespace Loans.Tests
             return sut.CalculateMonthlyRepayment(new LoanAmount("USD", principal), interestRate, new LoanTerm(termInYears));
         }
 
-        
+
     }
 }

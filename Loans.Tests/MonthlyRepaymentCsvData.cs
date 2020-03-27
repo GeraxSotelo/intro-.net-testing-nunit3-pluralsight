@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-        //using a csv file as a source of test data
+//using a csv file as a source of test data
 namespace Loans.Tests
 {
     public class MonthlyRepaymentCsvData
