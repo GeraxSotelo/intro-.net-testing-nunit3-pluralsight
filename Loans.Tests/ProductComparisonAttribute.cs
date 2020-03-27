@@ -8,6 +8,7 @@ namespace Loans.Tests
     // This attribute can be used at the method or class level and doesn't allow multiple uses of this attribute
     [AttributeUsage(AttributeTargets.Method | AttributeTargets.Class, AllowMultiple = false)]
     // Inherit from NUnit's 'CategoryAttribute' base class
+    // Custom 'ProductComparison' category name is automatically used from this class, minus the trailing 'Attribute' word
     class ProductComparisonAttribute : CategoryAttribute
     {
     }

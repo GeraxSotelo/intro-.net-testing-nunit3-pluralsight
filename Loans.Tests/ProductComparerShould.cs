@@ -43,7 +43,8 @@ namespace Loans.Tests
         }
 
         [Test]
-        [Category("Product Comparison")]
+        // Custom 'ProductComparison' category name is automatically derived from the created class, minus the trailing 'Attribute' word
+        [ProductComparison]
         public void ReturnCorrectNumberOfComparisons()
         {
             
