@@ -80,6 +80,21 @@ namespace Loans.Tests
             var monthlyPayment = sut.CalculateMonthlyRepayment(new LoanAmount("USD", principal), interestRate, new LoanTerm(termInYears));
         }
 
-        
+        [Test]
+        [Sequential]
+        // Can override NUnit's combinatorial approach by using NUnit's 'Sequential' attribute. And can then add back in an expected result
+        // This will create 3 test cases
+        public void CalculateCorrectMonthlyRepayment_Sequential(
+            [Values(200_000, 200_000, 500_000)]decimal principal,
+            [Values(6.5, 10, 10)] decimal interestRate,
+            [Values(30, 30, 30)] int termInYears,
+            [Values(1264.14, 1755.14, 4387.86)] decimal expectedMonthlyPayment)
+        {
+            var sut = new LoanRepaymentCalculator();
+
+            var monthlyPayment = sut.CalculateMonthlyRepayment(new LoanAmount("USD", principal), interestRate, new LoanTerm(termInYears));
+
+            Assert.That(monthlyPayment, Is.EqualTo(expectedMonthlyPayment));
+        }
     }
 }
