@@ -194,3 +194,4 @@ C:\Users\gerax.sotelo\Documents\Pluralsight\Introduction to .NET Testing with NU
 C:\Users\gerax.sotelo\Documents\Pluralsight\Introduction to .NET Testing with NUnit 3\Loans.Tests\obj\Debug\netcoreapp3.1\Loans.Tests.AssemblyInfo.cs
 C:\Users\gerax.sotelo\Documents\Pluralsight\Introduction to .NET Testing with NUnit 3\Loans.Tests\obj\Debug\netcoreapp3.1\Loans.Tests.csproj.CopyComplete
 C:\Users\gerax.sotelo\Documents\Pluralsight\Introduction to .NET Testing with NUnit 3\Loans.Tests\obj\Debug\netcoreapp3.1\Loans.Tests.genruntimeconfig.cache
+C:\Users\Sotelo\Documents\Pluralsight\Introduction to .NET Testing with NUnit 3\nunit-3-dotnet-testing-introduction\02\demos\before\01TestProject\Loans.Tests\bin\Debug\netcoreapp3.1\Data.csv
